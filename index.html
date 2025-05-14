@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>Sewa Alat Naik Gunung - Beranda</title>
+<style>
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  body {
+    background: linear-gradient(
+    rgba(0, 0, 0, 0.55),
+    rgba(0, 0, 0, 0.55)
+  ),
+  url('backgroundindex.jpg') no-repeat center center fixed;
+background-size: cover;
+    color: #f0f0f0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 44, 88, 0.8);
+    backdrop-filter: saturate(180%) blur(10px);
+    padding: 15px 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.7);
+    z-index: 1000;
+  }
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header h1 {
+    font-weight: 700;
+    font-size: 1.9rem;
+    letter-spacing: 3px;
+    color: #a9d6e5;
+  }
+  nav {
+    display: flex;
+    gap: 25px;
+  }
+  nav a {
+    color: #cde6f2;
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding-bottom: 3px;
+    border-bottom: 3px solid transparent;
+    transition: border-color 0.3s, color 0.3s;
+  }
+  nav a:hover {
+    color: #88c0d0;
+    border-bottom: 3px solid #88c0d0;
+  }
+  nav a.active {
+    border-bottom: 3px solid #82c91e;
+    color: #82c91e;
+  }
+  main {
+    flex: 1;
+    max-width: 900px;
+    margin: 110px auto 40px auto; 
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 40px 35px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    backdrop-filter: saturate(180%) blur(10px);
+  }
+  main h2 {
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+    color: #d4f1f9;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+  }
+  main p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #e0f7fa;
+    line-height: 1.6;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+  }
+  .btn-primary {
+    display: inline-block;
+    background-color: #82c91e;
+    color: #0a0a0a;
+    padding: 14px 32px;
+    font-weight: 700;
+    border-radius: 30px;
+    box-shadow: 0 6px 15px rgba(130,201,30, 0.6);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    cursor: pointer;
+  }
+  .btn-primary:hover {
+    background-color: #a5d53c;
+    color: #000;
+  }
+  footer {
+    background: rgba(0, 44, 88, 0.85);
+    color: #a9d6e5;
+    text-align: center;
+    padding: 15px 20px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    backdrop-filter: saturate(180%) blur(10px);
+  }
+  @media (max-width: 600px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+    nav {
+      gap: 15px;
+    }
+    main {
+      padding: 25px 20px;
+      margin: 90px 10px 30px;
+      border-radius: 12px;
+    }
+    main h2 {
+      font-size: 1.8rem;
+    }
+    .btn-primary {
+      padding: 12px 25px;
+      font-size: 1rem;
+    }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <h1>Sewa Alat Naik Gunung</h1>
+    <nav>
+      <a href="index.html" class="active" aria-current="page">Beranda</a>
+      <a href="equipment.html">Peralatan</a>
+      <a href="contact.html">Kontak</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <h2>Selamat Datang di Sewa Alat Naik Gunung</h2>
+  <p>Siap untuk petualangan seru? Kami punya semua perlengkapan pendakian yang kamu butuhkan!
+    Tenda, carrier, sleeping bag, dan masih banyak lagi, semua terawat dan siap menemani perjalananmu ke puncak.
+    </p>
+  <p>Rencanakan perjalananmu dengan nyaman dan aman bersama kami!</p>
+  <a href="equipment.html" class="btn-primary" role="button">Lihat Peralatan</a>
+</main>
+<footer>
+  &copy; 2024 Sewa Alat Naik Gunung. Hak Cipta Dilindungi.
+</footer>
+</body>
+</html>
